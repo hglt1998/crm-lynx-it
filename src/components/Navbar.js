@@ -4,21 +4,24 @@ import card1 from '../static/LogoSinFondo.png'
 
 export default function NavBar() {
   return (
-    <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header className="mb-auto">
-        <div>
-          <Link className="float-md-start mb-0" to='/'>
-            <img height="30" src={card1} alt="banner" className="navbarImage"></img>
-          </Link>
-          <nav className="nav nav-masthead justify-content-center float-md-end">
-            <NavLink className="nav-link" to="/">
-              Inicio
-            </NavLink>
-            <NavLink className="nav-link" to="/actuaciones">Clientes</NavLink>
-            <NavLink className="nav-link" to="/about">Crear factura</NavLink>
+    <nav className="navbar">
+      <div className="row container-fluid">
+        <div className="col-4 d-flex">
+          <nav className="d-flex">
+            <Link className="navbar-brand" to='/'>
+              <img width="30" height="30" src={card1} alt="banner" className=""></img>
+            </Link>
+            <NavLink className="nav-link" to="/">Inicio</NavLink>
+            <NavLink className="nav-link" to="/clients">Clientes</NavLink>
+            <NavLink className="nav-link" to="/createInvoice">Crear factura</NavLink>
           </nav>
         </div>
-      </header>
-    </div>
+        <div className="col-4 profile-item">
+          <NavLink className="" to="/profile">
+            <span class="material-symbols-outlined">person</span>
+          </NavLink>
+        </div>
+      </div>
+    </nav>
   );
 }
