@@ -19,11 +19,25 @@ body {
   background-color: #e9ecef;
 }
 
+.brand-image {
+  height: 30px;
+  width: 30px;
+  max-width: 30px;
+}
+
+.navbar-brand {
+  padding: auto;
+  margin: auto;
+}
+
 .nav-link {
   color: #67748e;
-  font-size: 3vh;
-  padding: 2vh;
-  width: 30%;
+  font-size: 2vh;
+  min-width: fit-content;
+  width: fit-content;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  margin: auto;
 }
 
 .active, .nav-link:focus {
@@ -46,6 +60,8 @@ body {
 .profile-item {
   padding: 0;
   margin: 0;
+  width: auto;
+  height: auto;
 }
 
 .shadow {
